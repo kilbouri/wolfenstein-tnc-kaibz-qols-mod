@@ -9,7 +9,7 @@ void DebugGui::showDebugWindow(bool* p_open)
     }
 
 
-    ImGuiDebugWin::ClearMessages();
+    /*ImGuiDebugWin::ClearMessages();
 
     ImGuiDebugWin::AddMessage("DEBUG:");
     ImGuiDebugWin::AddMessage("_");
@@ -26,12 +26,12 @@ void DebugGui::showDebugWindow(bool* p_open)
     ImGuiDebugWin::AddMessage(Tests::getmovementModeDgbStrForImgui());
 
 
-    ImGuiDebugWin::AddMessage(hudManager::inGuiGetDualWieldInfo());       
+    ImGuiDebugWin::AddMessage(hudManager::inGuiGetDualWieldInfo());      */ 
 
 
 
 
-    ImGuiViewport* viewport = ImGui::GetMainViewport();
+    /*ImGuiViewport* viewport = ImGui::GetMainViewport();
 
     ImVec2 window_pos = ImVec2(viewport->Pos.x, viewport->Pos.y);
     ImVec2 window_size = ImVec2(viewport->Size.x, viewport->Size.y);
@@ -47,5 +47,5 @@ void DebugGui::showDebugWindow(bool* p_open)
             ImGui::TextUnformatted(msg.c_str());
         }
     }
-    ImGui::End();
+    ImGui::End();*/
 }
