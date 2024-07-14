@@ -966,7 +966,8 @@ WNDPROC pOriginalWndProc = nullptr;
 
 LRESULT CALLBACK HookedWndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 
-	if (MenuStateManager::isNotMenu() && !idConsoleLocalManager::isConsoleOpened() && cachedCvarsManager::isWindowFocused()) {
+	// Menu check removed as it currently fails to detect menus correctly.
+	if (/* MenuStateManager::isNotMenu() && */ !idConsoleLocalManager::isConsoleOpened() && cachedCvarsManager::isWindowFocused()) {
 		if (uMsg == WM_KEYDOWN) {
 			if (wParam == ModSettingsManager::getNormalSpeedKeyCode()) {
 				logInfo("HookedWndProc: user pressing normal speed key");
