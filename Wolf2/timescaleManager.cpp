@@ -2,7 +2,7 @@
 
 
  const float timescaleManager::m_normalSpeedScaleF = 1.0f;
- const float timescaleManager::m_fastForwardSpeedScaleF = 10.0f;
+ const float timescaleManager::m_fastForwardSpeedScaleF = 50.0f;
 
 
 void timescaleManager::setMaxSpeed()
